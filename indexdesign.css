@@ -1,0 +1,605 @@
+body{
+    background-color: white; /* sets the given color  of the body background*/
+    color:whitesmoke;   /* sets the given color  of the text*/
+    margin:0px 0px 0px 0px; /*sets the margin of html body part*/
+}
+
+header{    
+    font-family: 'Anton', sans-serif;/*specifies the font of the text*/
+    font-size:40px;/*specifies the size of the text*/
+    color: #DD2C00;  /*specifies the color of the text*/  
+    padding: 0px;  /*specifies the gapping with the header of the text*/
+}
+
+header > a{
+    text-decoration: none; /*specifies the decoration style of the text*/
+    color:#DD2C00;
+}
+
+nav{
+    background-color:#e65100;
+    font-family: 'Anton', sans-serif;
+    padding:15px;
+    opacity:0.8; /*specifies the transparency */
+}
+
+nav ul{
+
+    display:flex;  /*this sepecifies the layout flex*/
+    justify-content: space-around; /*specifies the spacing of the contnet */
+    margin: 0px;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+
+    color:black;   
+}
+
+section{
+    display:flex;    
+    margin:10px 0px 10px 0px;
+}
+
+.infotab{
+    background-color:white;
+    margin-right:5px;
+    padding:5px;    
+    width:20%;
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.infotab > img{
+    border-radius:50%;
+    width:50%;
+    padding:5px 50px 0px 50px;
+}
+
+
+.first-coloumn{      
+    margin-right: 14px;
+    margin-left:10px;
+    width:20%;    
+    background-color: white;
+}
+
+.first-coloumn > .row-first> a{
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+.first-coloumn > .row-first> a:hover{
+    text-decoration:underline;
+    color:purple;    
+}
+
+.first-coloumn > .row-first > p{
+    color:black;
+}
+
+
+.first-coloumn > .row-first {
+
+    background-color: white;
+    width:94%;
+    height: 23%;
+    margin: 0px 10px 10px 10px;       
+}
+
+.first-coloumn > .row-first:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);    
+}
+
+
+.first-coloumn > .row-second> a{
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+.first-coloumn > .row-second> a:hover{
+    text-decoration:underline;
+    color:purple;    
+}
+
+.first-coloumn > .row-second> p{
+    color:black;
+}
+
+.first-coloumn > .row-second {
+
+    background-color: white;
+    width:94%;
+    height: 23%;
+    margin: 18px 10px 10px 10px;        
+}
+
+.first-coloumn > .row-second:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);    
+}
+
+
+.first-coloumn > .row-third> a{
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+.first-coloumn > .row-third> a:hover{
+    text-decoration:underline;
+    color:purple;    
+}
+
+.first-coloumn > .row-third> p{
+    color:black;
+}
+
+
+.first-coloumn > .row-third {
+
+    background-color: white;
+    width:94%;
+    height: 23%;
+    margin: 18px 10px 10px 10px;
+    
+}
+
+.first-coloumn > .row-third:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);    
+}
+
+
+.first-coloumn > .row-fourth> a{
+    text-decoration:none;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+.first-coloumn > .row-fourth> a:hover{
+    text-decoration:underline;
+    color:purple;    
+}
+
+.first-coloumn > .row-fourth> p{
+    color:black;
+}
+
+.first-coloumn > .row-fourth {
+
+    background-color: white;
+    width:94%;
+    height: 23%;
+    margin: 18px 10px 10px 10px;    
+}
+
+.first-coloumn > .row-fourth:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);    
+}
+
+
+.second-coloumn{
+    background-color: #ffd180;        
+    width:100%; /*specifies the width */
+    height:70%;/*specifies the height*/
+}
+.topic{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color:black;
+    text-decoration: bold;
+}
+
+.content{
+    padding:15px;
+    column-count: 4;
+    font-size:20px;
+    color:black;
+}
+
+.image-slider1{
+    display:flex;    
+    height:102%;
+    width:57%;
+    background-image: url(france1.jpg);
+    background-size: 100% 100%;
+    animation:present 40s infinite linear; /*creats animation named presentaion which complets in 5s and goes on infinately in a constant speed*/
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-slider1 > a{
+    text-decoration:none;
+    color:#FFCCBC;
+    padding:550px 0px 0px 5px;
+}
+
+.image-slider1 >a:hover{
+    text-decoration: underline;
+}
+
+
+@keyframes present{ /*specifies the action for animation*/
+    0%{background-image: url(france1.jpg);}
+    25%{background-image: url(france2.jpg);}
+    45%{background-image: url(france3.jpg);}
+    65%{background-image: url(france4.jpg);}
+    85%{background-image: url(france5.jpg);}
+}
+
+.small-small{
+    display:flex;
+    flex-direction: column;
+}
+
+/* this is used for editing the div with a class name small-news */
+.small-news{
+    background-color: white;
+    height:35%;    
+    display: flex;    
+    justify-content: space-between;
+    color:black;
+}
+
+.small-news > .news-first{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news> .news-first:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-first > a{
+    text-decoration: none;
+    color:black;
+}
+
+.news-first > a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+
+
+ .news-first > img{
+    width:100%;
+    height:75%;
+}
+
+.small-news > .news-second{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news> .news-second:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-second > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-second > img{
+    width:100%;
+    height:75%;
+}
+
+.news-second> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+.small-news > .news-third{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news> .news-third:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-third > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-third > img{
+    width:100%;
+    height:75%;
+}
+
+.news-third> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+
+
+
+.small-news > .news-fourth{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif;  
+} 
+
+.small-news> .news-fourth:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+
+.news-fourth > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-fourth > img{
+    width:100%;
+    height:75%;
+}
+
+.news-fourth> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+.small-news1{
+    background-color: white;
+    height:35%;    
+    display: flex;
+    justify-content: space-between;
+    color:black;
+}
+
+.small-news1 > .news-first1{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news1> .news-first1:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-first1 > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-first1 > img{
+    width:100%;
+    height:75%;
+}
+
+.news-first1> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+.small-news1 > .news-second2{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news1> .news-second2:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-second2 > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-second2 > img{
+    width:100%;
+    height:75%;
+}
+
+.news-second2> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+.small-news1 > .news-third3{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.small-news1> .news-third3:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-third3 > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-third3 > img{
+    width:100%;
+    height:75%;
+}
+
+
+.news-third3> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+
+.small-news1 > .news-fourth4{
+    background-color:white;
+    width: 20%;
+    height:80%;    
+    margin-top:20px;
+    font-family: 'Varela Round', sans-serif;  
+} 
+
+.small-news1> .news-fourth4:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);    
+}
+
+.news-fourth4 > a{
+    text-decoration: none;
+    color:black;
+}
+
+ .news-fourth4 > img{
+    width:100%;
+    height:75%;
+}
+
+.news-fourth4> a:hover{
+    text-decoration: underline;
+    color:purple;
+}
+ 
+footer{
+    background-color: #546E7A;    
+    font-family: 'Poppins', sans-serif;   
+    height:40%;
+    margin-bottom: 0px;
+}
+
+.footer-title{
+    font-size:40px;
+    padding:10px 0px 0px 50px;
+}
+
+.company-info{
+    display:flex;    
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding:10px 0px 0px 10px;
+}
+
+.first{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .first > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.first> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.second{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .second > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.second> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.Third{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .Third > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.Third> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.last{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 0px 0px 10px;
+}
+
+.last > a{
+    text-decoration: none;
+    color:white;
+}
+
+.last> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+@media screen and (max-width:450px){/*this specific lines makes the page dynamic if the pixel of the page decreases below 450px */
+   body{margin: 0px 0px 0px 2px; padding:0px;}  
+   header{text-align:center;} 
+    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
+   section{display: flex; flex-direction: column; width:100%; height: auto;}
+   .infotab,.image-slider1,.second-coloumn,.small-news>.news-first,.small-news>.news-second,.small-news>.news-third,.small-news>.news-fourth,.small-news1>.news-first1,.small-news1>.news-first1,.small-news1>.news-second2,.small-news1>.news-third3,.small-news1>.news-fourth4{width:100%; height:auto; }
+   
+   .first-coloumn{height:auto; width:100%; margin:0px; padding: 0px;}
+   .row-first,.row-second,.row-third,.row-fourth{border:1px solid black;}
+   .image-slider1 > a{text-decoration: underline; font-size: 20px; padding-bottom: 30px;}
+   .small-small{display:flex; flex-direction:column; width:100%; height:auto;}
+   .small-news,.small-news1{display:flex; flex-direction:column; width:100%; height:auto; }
+   .content{column-count: 2;}
+   footer{height:auto; width:100%; margin-right:0px;}
+   .footer-title{text-align: left;}
+   .company-info{display: flex; flex-direction: column;}
+   .last{display:flex; flex-direction: column;}
+}
+
+
+
+@media screen and (min-width:2465px){/*this specific lines makes the page dynamic */
+    body{margin: 0px 0px 0px 10px; padding:0px; font-size:20px;}     
+    .content{column-count: 2; font-size:30px;}
+    .second-coloumn{height:auto;}
+    .image-slider1{height:auto; width:59%; }
+    .image-slider1 > a {font-size:60px;}
+   /* footer{height:auto; width:100%; margin-right:0px;}
+    .footer-title{text-align: left; font-size: 50px;}
+    .company-info{display: flex; flex-direction: column; font-size: 35px;}
+    .last{display:flex; flex-direction: column;font-size: 35px;}
+    .small-news,.small-news1{justify-content: space-between;}
+ }*/
+
+@media screen and (min-width:550px) and (max-width:940px){/*specifies the ranges beteen the two sizes of pixel*/ 
+	.image-slider1{height:auto;}
+}
+
+ 
+ 
