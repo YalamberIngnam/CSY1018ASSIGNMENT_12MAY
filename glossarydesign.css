@@ -1,0 +1,323 @@
+body{
+    background-color: white; /* sets the given color  of the body background*/
+    color:whitesmoke;   /* sets the given color  of the text*/
+    margin:0px 0px 0px 0px; /*sets the margin of html body part*/
+}
+
+header{    
+    display:flex;
+    font-family: 'Anton', sans-serif;
+    font-size:40px;    
+    padding: 0px;
+    color:white;
+    background-color:firebrick
+}
+
+
+
+
+header > a{
+    text-decoration: none;    
+    color:white;
+}
+
+nav{
+    background-color:#991B1E;
+    font-family: 'Anton', sans-serif;
+    padding:15px;
+    
+}
+
+nav ul{
+
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+
+    color:black;   
+} 
+
+.pagetitle{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    margin:2px 0px 2px 0px ;
+
+}
+
+section{       
+    height:500px;
+    display: flex;
+}
+
+.initial{
+    display:flex;    
+    flex-direction: column;
+    height:100%;
+    width:70%;
+    
+}
+
+.initial>.one{
+    
+    height:90%;
+    width:100%;
+    background-image: url(podcast.jpg);
+    background-size: 100%;  
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;     
+}
+
+.initial>.voice1{
+    height:10%;    
+}
+
+.initial>.one>  p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;  
+
+}
+
+
+.voice1>audio{    
+    width:100%;
+        
+}
+
+.two-grid{
+    display:grid;
+    justify-content: space-between;
+    grid-template-columns: 190px 190px ;
+    grid-template-rows:60px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;    
+    background-color:rgba(0,0,0,0.8);
+    padding:10px;
+    width: 30%;
+}
+
+.two-grid > div {
+    background-color:black;
+    text-align:center;
+    padding:0px 0px 0px 0px;   
+    font-size:20px;
+    border: 1px solid grey;
+    font-family: 'Poppins', sans-serif;  
+    
+}
+
+
+
+.two-grid > div >a{
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+
+
+.two-grid > div >a:hover{
+    background-color: white;  
+    color:black;
+}
+
+
+.two-grid>.category1{
+    font-family: 'Anton', sans-serif;
+    background-color: maroon;
+}
+
+.two-grid>.category2{
+    font-family: 'Anton', sans-serif;
+    background-color: maroon;
+}
+
+.secondtitle{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color:black;
+    text-align: center;    
+    margin-top:10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.twocontainer{
+    height:400px;
+    width:100%;    
+    margin: 10px 0px 10px 0px;
+    display:flex;    
+}
+
+
+.twocontainer > .number1{
+    height:100%;
+    width:34%;
+    background-image:url(webexample0.jpg);
+    background-size:cover;
+    background-color: yellow;
+    font-family: 'Poppins', sans-serif;    
+    margin-right:10px;
+    color:black;    
+}
+
+
+.twocontainer > .number1 > h1{
+    background-color: rgba(255,255,255,0.4);
+    
+}
+.twocontainer > .number2{
+    height:100%;
+    width:34%;
+    background-image:url(webexample.jpg);
+    background-size:100%;
+    font-family: 'Poppins', sans-serif;    
+    margin-right:10px;
+    color:black;
+}
+
+.twocontainer > .number2 > h1{
+    background-color: rgba(255,255,255,0.3);
+    padding-top:10px;
+    
+}
+
+.twocontainer > .number3{
+    height:100%;
+    width:34%;
+    background-image: url(webexample1.png);
+    background-size:100%;
+    font-family: 'Poppins', sans-serif;      
+    color:black;
+    
+}
+
+.twocontainer > .number3 > h1{
+    background-color: rgba(255,255,255,0.4);
+    
+}
+
+.twocontainer>.number1>h1> a{
+    text-decoration: none;
+    color:black;
+}
+
+.twocontainer>.number2>h1> a{
+    text-decoration: none;
+    color:black;
+}
+
+.twocontainer>.number3>h1> a{
+    text-decoration: none;
+    color:black;
+}
+
+.twocontainer>.number1>h1> a:hover{
+    text-decoration: underline;
+    color:purple;    
+}
+
+.twocontainer>.number2>h1> a:hover{
+    text-decoration: underline;
+    color:purple;    
+}
+
+.twocontainer>.number3>h1> a:hover{
+    text-decoration: underline;
+    color:purple;    
+}
+
+
+
+footer{
+    background-color: #546E7A;    
+    font-family: 'Poppins', sans-serif;   
+    height:40%;
+    margin-bottom: 0px;
+}
+
+.footer-title{
+    font-size:40px;
+    padding:10px 0px 0px 50px;
+}
+
+.company-info{
+    display:flex;    
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding:10px 0px 0px 10px;
+}
+
+.first{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .first > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.first> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.second{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .second > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.second> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.Third{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .Third > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.Third> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.last{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 0px 0px 10px;
+}
+
+.last > a{
+    text-decoration: none;
+    color:white;
+}
+
+.last> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
