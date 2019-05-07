@@ -1,0 +1,127 @@
+body{
+    background-color: white; /* sets the given color  of the body background*/
+    color:whitesmoke;   /* sets the given color  of the text*/
+    margin:0px 0px 0px 0px; /*sets the margin of html body part*/
+}
+
+header{
+    /* text-align:center; */
+    font-family: 'Anton', sans-serif;
+    font-size:40px;
+    color: #DD2C00;    
+    padding: 0px;
+}
+
+header > a{
+    text-decoration: none;
+    color:#DD2C00;
+}
+
+nav{
+    background-color:#e65100;
+    font-family: 'Anton', sans-serif;
+    padding:15px;
+    opacity:0.8;
+}
+
+nav ul{
+
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+
+    color:black;   
+} 
+footer{
+    background-color: #546E7A;    
+    font-family: 'Poppins', sans-serif;   
+    height:40%;
+    margin-bottom: 0px;
+}
+
+.footer-title{
+    font-size:40px;
+    padding:10px 0px 0px 50px;
+}
+
+.company-info{
+    display:flex;    
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding:10px 0px 0px 10px;
+}
+
+.first{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .first > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.first> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.second{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .second > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.second> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.Third{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .Third > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.Third> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.last{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 0px 0px 10px;
+}
+
+.last > a{
+    text-decoration: none;
+    color:white;
+}
+
+.last> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
