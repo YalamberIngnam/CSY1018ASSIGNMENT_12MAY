@@ -1,0 +1,232 @@
+body{
+    background-color: white; /* sets the given color  of the body background*/
+    color:whitesmoke;
+    margin:0px 0px 0px 0px; /*sets the margin of html body part*/
+}
+
+header{
+    /* text-align:center; */
+    font-family: 'Anton', sans-serif;
+    font-size:40px;
+    color: #DD2C00;    
+    padding: 0px;
+}
+
+header > a{
+    text-decoration: none;
+    color:#DD2C00;
+}
+
+nav{
+    background-color:#e65100;
+    font-family: 'Anton', sans-serif;
+    padding:15px;
+    opacity:0.8;
+}
+
+nav ul{
+
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+
+    color:black;   
+}
+
+section{
+    display: flex;  
+    height:550px;
+
+}
+
+.topic{
+    text-align:center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    color:brown;
+}
+
+.right{
+height:100%;
+width:49%;
+margin-right:1%;
+
+}
+
+.right>img{
+    height:40%;
+    width:40%;
+    padding: 40px 0px 0px 190px; 
+    transition: transform 0.5s;
+}
+
+.right> .title{
+    text-decoration: underline;
+    font-size: 30px;
+    color:black;
+    text-align:center;
+}
+
+
+.right>img:hover{
+    transform: scale(1.1);
+
+}
+
+.right>.content{
+    color:black;
+    padding:10px;
+}
+
+
+.left{    
+    height:100%;
+    width:50%;
+}
+
+.left > img{
+    height:40%;
+    width:40%;
+    padding:40px 0px 0px 195px;    
+    transition: transform 0.5s;  
+
+}
+
+.left>.content{
+	color:black;
+    padding:10px;
+
+}
+
+
+.left> .title{
+    text-decoration: underline;
+    font-size: 30px;
+    color:black;
+    text-align:center;    
+}
+
+
+.left>img:hover{
+    transform: scale(1.1);
+
+}
+
+footer{
+    background-color: #546E7A;    
+    font-family: 'Poppins', sans-serif;   
+    height:40%;
+    margin-bottom: 0px;
+}
+
+.footer-title{
+    font-size:40px;
+    padding:10px 0px 0px 50px;
+}
+
+.company-info{
+    display:flex;    
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding:10px 0px 0px 10px;
+}
+
+.first{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .first > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.first> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.second{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .second > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.second> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.Third{
+    display:flex;
+    flex-direction: column;
+}
+
+.company-info > .Third > a{
+    text-decoration: none;
+    color:white;
+}
+
+.company-info >.Third> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+.last{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 0px 0px 10px;
+}
+
+.last > a{
+    text-decoration: none;
+    color:white;
+}
+
+.last> a:hover{
+    text-decoration: underline;
+    color:antiquewhite;
+}
+
+
+@media screen and (max-width:450px){
+
+    body{margin: 0px 0px 0px 2px; padding:0px;}  
+    header{text-align:center;} 
+     nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
+    section{flex-direction: column; height: auto; width: 100%;}
+    .right,.left{width:100%; height:auto;}
+    .left > img,.right > img{padding:40px 0px 0px 90px;}
+    footer{height:auto; width:100%; margin-right:0px;}
+   .footer-title{text-align: left;}
+   .company-info{display: flex; flex-direction: column;}
+   .last{display:flex; flex-direction: column;}
+
+}
+
+
+@media screen and (min-width:2465px){/*this specific lines makes the page dynamic */
+    body{margin: 0px 0px 0px 10px; padding:0px; font-size:20px;}     
+    section{height: auto; width: 100%;}
+    .left>.content,.right>.content{font-size:30px;}
+    .left> .title,.right> .title{font-size:35px;}
+    .left> img,.right> img{padding:40px 0px 0px 420px;}
+ }
