@@ -66,12 +66,12 @@ margin-right:1%;
 
 }
 
-.right>img{
+/* .right>img{
     height:40%;
     width:40%;
     padding: 40px 0px 0px 190px; 
     transition: transform 0.5s;
-}
+} */
 
 .right> .title{
     text-decoration: underline;
@@ -80,15 +80,30 @@ margin-right:1%;
     text-align:center;
 }
 
-
-.right>img:hover{
-    transform: scale(1.1);
-
-}
-
 .right>.content{
     color:black;
     padding:10px;
+}
+
+.imagecontainer{
+    width: 240px;
+    height: 240px;    
+    transform: translate(230px,20px);    
+}
+
+
+.imagehere{
+    width:inherit;
+    height:inherit;
+    background-image: url(w3.png);
+    background-position:center;
+    background-size:cover;
+    transition:0.5s;
+}
+
+
+.imagecontainer:hover .imagehere{
+    transform: scale(1.1);
 }
 
 
@@ -97,19 +112,45 @@ margin-right:1%;
     width:50%;
 }
 
-.left > img{
+/* .left > img{
     height:40%;
     width:40%;
     padding:40px 0px 0px 195px;    
     transition: transform 0.5s;  
 
-}
+} */
 
 .left>.content{
 	color:black;
     padding:10px;
 
 }
+
+
+.imagecontainer1{
+    width: 240px;
+    height: 240px;    
+    transform: translate(230px,20px);    
+    border-radius: 40px;
+    background-color: black;
+    
+}
+
+
+.imagehere1{
+    width:inherit; /*sets the height equal to its parent container*/
+    height:inherit; /*sets the width equal to its parent container*/
+    background-image: url(stack.png);
+    background-position:center; /*centralizes the image within the container*/
+    background-size:cover; /*especifies the size of image to have full image and fully cover a container*/
+    transition:0.5s;
+}
+
+
+.imagecontainer1:hover .imagehere1{
+    transform: scale(1.1);
+}
+
 
 
 .left> .title{
@@ -119,11 +160,6 @@ margin-right:1%;
     text-align:center;    
 }
 
-
-.left>img:hover{
-    transform: scale(1.1);
-
-}
 
 footer{
     background-color: #546E7A;    
@@ -214,7 +250,7 @@ footer{
      nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
     section{flex-direction: column; height: auto; width: 100%;}
     .right,.left{width:100%; height:auto;}
-    .left > img,.right > img{padding:40px 0px 0px 90px;}
+    .imagecontainer, .imagecontainer1{transform:translate(81px, 10px);}
     footer{height:auto; width:100%; margin-right:0px;}
    .footer-title{text-align: left;}
    .company-info{display: flex; flex-direction: column;}
@@ -228,5 +264,5 @@ footer{
     section{height: auto; width: 100%;}
     .left>.content,.right>.content{font-size:30px;}
     .left> .title,.right> .title{font-size:35px;}
-    .left> img,.right> img{padding:40px 0px 0px 420px;}
+    .imagecontainer, .imagecontainer1{transform:translate(492px, 10px); width:300px; height:300px;}
  }
