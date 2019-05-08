@@ -45,6 +45,117 @@ nav ul li a:hover{
 
     color:black;   
 } 
+
+section{
+    width:100%;
+    height: 1710px;
+    background-color: pink;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.firstone{
+    background-color: #e65100;
+    width:100%;
+    height:500px;
+    display: flex;
+    margin-top:5px;
+    margin-bottom: 5px;   
+
+}
+
+legend{
+    font-family: 'Anton', sans-serif;
+    font-size:30px;
+}
+
+.firstone> .oneone{
+    height:100%;
+    width: 33%;
+    background-color: white;
+    margin-right:10px;
+
+}
+
+.firstone> .onetwo{
+    height:100%;
+    width: 33%;
+    background-color: brown;
+    margin-right:10px;
+
+}
+
+.firstone> .onethree{
+    height:100%;
+    width: 33%;
+    background-color: cornflowerblue;
+
+}
+
+
+.firsttwo{
+    background-color:white;
+    width:100%;
+    height:500px;
+    display: flex;    
+    margin-bottom: 5px;
+}
+
+.firsttwo> .twoone{
+    height:100%;
+    width: 33%;
+    background-color: sandybrown;
+    margin-right:10px;
+
+}
+
+.firsttwo> .twotwo{
+    height:100%;
+    width: 33%;
+    background-color: brown;
+    margin-right:10px;
+
+}
+
+.firsttwo> .twothree{
+    height:100%;
+    width: 33%;
+    background-color: cornflowerblue;
+
+}
+
+.firstthird{
+    background-color: blueviolet;
+    width:100%;
+    height:500px;
+    display: flex;    
+    margin-bottom: 5px;
+}
+
+.firstthird> .threeone{
+    height:100%;
+    width: 33%;
+    background-color: white;
+    margin-right:10px;
+
+}
+
+.firstthird> .threetwo{
+    height:100%;
+    width: 33%;
+    background-color: yellow;
+    margin-right:10px;
+
+}
+
+.firstthird> .threethree{
+    height:100%;
+    width: 33%;
+    background-color: black;
+
+}
+
 footer{
     background-color: #546E7A;    
     font-family: 'Poppins', sans-serif;   
@@ -124,4 +235,19 @@ footer{
 .last> a:hover{
     text-decoration: underline;
     color:antiquewhite;
+}
+
+
+@media screen and (max-width:450px){
+
+    body{margin: 0px 0px 0px 2px; padding:0px;}  
+    header{text-align:center;} 
+    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
+    footer{height:auto; width:100%; margin-right:0px;}
+   .footer-title{text-align: left;}
+   .company-info{display: flex; flex-direction: column;}
+   .last{display:flex; flex-direction: column;}
+   field{display:flex; flex-direction: column; width:100%; height:auto; }
+
+
 }
