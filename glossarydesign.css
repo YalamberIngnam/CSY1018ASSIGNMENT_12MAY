@@ -53,9 +53,8 @@ nav ul li a:hover{
 .pagetitle{
     font-family: 'Anton', sans-serif;
     font-size: 30px;
-    color:black;
-    text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    color:#010364;
+    text-align: center;    
     margin:2px 0px 2px 0px ;
 
 }
@@ -144,13 +143,13 @@ section{
     background-color: maroon;
 }
 
+
 .secondtitle{
     font-family: 'Anton', sans-serif;
     font-size: 30px;
-    color:black;
+    color:#010364;
     text-align: center;    
-    margin-top:10px;
-    background-color: rgba(0,0,0,0.5);
+    margin-top:10px;   
 }
 
 
@@ -166,16 +165,17 @@ section{
     height:100%;
     width:34%;
     background-image:url(webexample0.jpg);
-    background-size:cover;
-    background-color: yellow;
+    background-size:cover;    
     font-family: 'Poppins', sans-serif;    
-    margin-right:10px;
+    margin-right:10px;    
     color:black;    
 }
 
 
 .twocontainer > .number1 > h1{
-    background-color: rgba(255,255,255,0.4);
+    /* background-color: rgba(255,255,255,0.4); */
+    padding-top:400px;
+    
     
 }
 .twocontainer > .number2{
@@ -189,8 +189,8 @@ section{
 }
 
 .twocontainer > .number2 > h1{
-    background-color: rgba(255,255,255,0.3);
-    padding-top:10px;
+    /* background-color: rgba(255,255,255,0.3); */
+    padding-top:400px;
     
 }
 
@@ -205,7 +205,8 @@ section{
 }
 
 .twocontainer > .number3 > h1{
-    background-color: rgba(255,255,255,0.4);
+    /* background-color: rgba(255,255,255,0.4); */
+    padding-top:400px;
     
 }
 
@@ -246,6 +247,7 @@ footer{
     font-family: 'Poppins', sans-serif;   
     height:40%;
     margin-bottom: 0px;
+    margin-top:159px;
 }
 
 .footer-title{
@@ -320,4 +322,18 @@ footer{
 .last> a:hover{
     text-decoration: underline;
     color:antiquewhite;
+}
+
+
+@media screen and (max-width:450px){
+
+    body{margin: 0px 0px 0px 2px; padding:0px;}  
+    header{text-align:center;} 
+    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
+    footer{height:auto; width:100%; margin-right:0px;}
+   .footer-title{text-align: left;}
+   .company-info{display: flex; flex-direction: column;}
+   .last{display:flex; flex-direction: column;}
+
+
 }
