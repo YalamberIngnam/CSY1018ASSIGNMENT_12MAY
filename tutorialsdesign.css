@@ -21,6 +21,9 @@ nav{
     background-color:#e65100;
     font-family: 'Anton', sans-serif;
     padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1;
     opacity:0.8;
 }
 
@@ -43,7 +46,8 @@ nav ul li a{
 
 nav ul li a:hover{
 
-    color:black;   
+    color:#010364;     
+    letter-spacing: 5px;  
 } 
 
 section{
@@ -584,6 +588,7 @@ footer{
 
     body{margin: 0px 0px 0px 2px; padding:0px;}  
     header{text-align:center;} 
+    nav{position: initial;}
     nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:center; margin:0px; padding:0px;}
     section{width:100%; height:auto;}
     .firstone, .firsttwo, .firstthird{display:flex; flex-direction: column; width:100%; padding:0%; height:auto;}

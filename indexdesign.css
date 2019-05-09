@@ -21,12 +21,14 @@ nav{
     font-family: 'Anton', sans-serif;
     padding:15px;
     opacity:0.8; /*specifies the transparency */
+    position:sticky;/*specifies the position of nav to always remain constant in the page*/
+    top:0; /*specifies the position top in the page*/
 }
 
 nav ul{
 
     display:flex;  /*this sepecifies the layout flex*/
-    justify-content: space-around; /*specifies the spacing of the contnet */
+    justify-content: space-evenly; /*specifies the spacing of the contnet */
     margin: 0px;
 }
 
@@ -42,7 +44,8 @@ nav ul li a{
 
 nav ul li a:hover{
 
-    color:black;   
+    color:#010364;     
+    letter-spacing: 5px;    
 }
 
 section{
@@ -600,6 +603,7 @@ footer{
 @media screen and (max-width:450px){/*this specific lines makes the page dynamic if the pixel of the page decreases below 450px */
    body{margin: 0px 0px 0px 2px; padding:0px;}  
    header{text-align:center;} 
+   nav{position: initial;}
     nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:center; margin:0px; padding:0px;}
    section{display: flex; flex-direction: column; width:100%; height: auto;}
    .infotab,.image-slider1,.second-coloumn,.small-news>.news-first,.small-news>.news-second,.small-news>.news-third,.small-news>.news-fourth,.small-news1>.news-first1,.small-news1>.news-first1,.small-news1>.news-second2,.small-news1>.news-third3,.small-news1>.news-fourth4{width:100%; height:auto; }
