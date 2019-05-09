@@ -4,13 +4,13 @@ body{
     margin:0px 0px 0px 0px; /*sets the margin of html body part*/
 }
 
-header{    
-    display:flex;
+header{       
     font-family: 'Anton', sans-serif;
     font-size:40px;    
-    padding: 0px;
-    color:white;
-    background-color:firebrick
+    padding: 0px;    
+    background-color:white;
+    text-align:right;
+    text-align:left;
 }
 
 
@@ -18,7 +18,7 @@ header{
 
 header > a{
     text-decoration: none;    
-    color:white;
+    color:#DD2C00;
 }
 
 nav{
@@ -56,8 +56,10 @@ nav ul li a:hover{
     color:#010364;
     text-align: center;    
     margin:2px 0px 2px 0px ;
-
+    
 }
+
+
 
 section{       
     height:500px;
@@ -100,7 +102,7 @@ section{
 
 .two-grid{
     display:grid;
-    justify-content: space-between;
+    grid-column-gap: 10px;
     grid-template-columns: 190px 190px ;
     grid-template-rows:60px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;    
     background-color:rgba(0,0,0,0.8);
@@ -147,9 +149,18 @@ section{
 .secondtitle{
     font-family: 'Anton', sans-serif;
     font-size: 30px;
-    color:#010364;
-    text-align: center;    
+    color:#010364;       
     margin-top:10px;   
+    display:flex;
+}
+
+.secondtitle:after{
+    content:'';
+    border-top: 2px solid black;
+    flex: 4 0px;
+    margin-top: 25px;
+    margin-left: 5px;
+
 }
 
 
@@ -329,11 +340,20 @@ footer{
 
     body{margin: 0px 0px 0px 2px; padding:0px;}  
     header{text-align:center;} 
-    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
-    footer{height:auto; width:100%; margin-right:0px;}
+    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:center; margin:0px; padding:0px;}
+    section{display:flex; flex-direction:column; height:auto; width:100%;}
+    .twocontainer{flex-direction:column; height:auto; width:100%;}
+    .twocontainer>.number1,.twocontainer>.number2, .twocontainer>.number3{Width:100%; height:auto; background-size: cover; background-position: center; display:flex; flex-direction:column; margin-bottom: 5px;}
+    .initial{flex-direction:column; width:100%; height:95%;}
+    .two-grid{ width:100%; height:auto; background-color: white; grid-column-gap: 5px; grid-template-columns: 195px 195px ;}
+    .twocontainer>.number1>h1,.twocontainer>.number2>h1, .twocontainer>.number3>h1{background-color: rgba(255,255,255,0.3);}
+    footer{height:auto; width:100%; margin-right:0px; margin-top:0px;}
    .footer-title{text-align: left;}
    .company-info{display: flex; flex-direction: column;}
    .last{display:flex; flex-direction: column;}
-
-
 }
+
+@media screen and (min-width:2465px){
+    .two-grid{grid-column-gap: 8px; grid-template-columns: 250px 250px ;}
+    .initial{width:126%;}
+    

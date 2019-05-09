@@ -71,6 +71,7 @@ section{
     margin-left:10px;
     width:20%;    
     background-color: white;
+    order:2;
 }
 
 .first-coloumn > .row-first> a{
@@ -187,6 +188,22 @@ section{
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2);    
 }
 
+.firsttitle{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color:#010364;       
+    margin-top:10px;   
+    display:flex;
+}
+
+.firsttitle:after{
+    content:'';
+    border-top: 2px solid black;
+    flex: 4 0px;
+    margin-top: 25px;
+    margin-left: 5px;
+
+}
 
 .second-coloumn{
     background-color: #ffd180;        
@@ -216,6 +233,7 @@ section{
     animation:present 40s infinite linear; /*creats animation named presentaion which complets in 5s and goes on infinately in a constant speed*/
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
+    order:1;
 }
 
 .image-slider1 > a{
@@ -235,6 +253,24 @@ section{
     45%{background-image: url(france3.jpg);}
     65%{background-image: url(france4.jpg);}
     85%{background-image: url(france5.jpg);}
+}
+
+
+.secondtitle{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color:#010364;       
+    margin-top:10px;   
+    display:flex;
+}
+
+.secondtitle:after{ /*specifies the content after the content of dic secondtitle*/
+    content:''; /*specifies the content afterward in the respective div*/
+    border-top: 2px solid black;
+    flex: 4 0px;
+    margin-top: 25px;
+    margin-left: 5px;
+
 }
 
 .small-small{
@@ -272,8 +308,6 @@ section{
     text-decoration: underline;
     color:purple;
 }
-
-
 
  .news-first > img{
     width:100%;
@@ -566,7 +600,7 @@ footer{
 @media screen and (max-width:450px){/*this specific lines makes the page dynamic if the pixel of the page decreases below 450px */
    body{margin: 0px 0px 0px 2px; padding:0px;}  
    header{text-align:center;} 
-    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:left; margin:0px; padding:0px;}
+    nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:center; margin:0px; padding:0px;}
    section{display: flex; flex-direction: column; width:100%; height: auto;}
    .infotab,.image-slider1,.second-coloumn,.small-news>.news-first,.small-news>.news-second,.small-news>.news-third,.small-news>.news-fourth,.small-news1>.news-first1,.small-news1>.news-first1,.small-news1>.news-second2,.small-news1>.news-third3,.small-news1>.news-fourth4{width:100%; height:auto; }
    
