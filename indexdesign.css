@@ -1,6 +1,6 @@
 body{
     background-color: white; /* sets the given color  of the body background*/
-    color:whitesmoke;   /* sets the given color  of the text*/
+    color:whitesmoke ;   /* sets the given color  of the text*/
     margin:0px 0px 0px 0px; /*sets the margin of html body part*/
 }
 
@@ -19,8 +19,7 @@ header > a{
 nav{
     background-color:#e65100;
     font-family: 'Anton', sans-serif;
-    padding:15px;
-    opacity:0.8; /*specifies the transparency */
+    padding:15px;    
     position:sticky;/*specifies the position of nav to always remain constant in the page*/
     top:0; /*specifies the position top in the page*/
 }
@@ -34,18 +33,20 @@ nav ul{
 
 nav ul li{
     list-style:none;
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color:whitesmoke;
     font-size: 20px;
+    display:inline-block;
 }
 
 nav ul li a:hover{
 
     color:#010364;     
-    letter-spacing: 5px;    
+    letter-spacing: 2px;    
 }
 
 section{
@@ -59,7 +60,7 @@ section{
     padding:5px;    
     width:20%;
     color:black;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
 }
 
 .infotab > img{
@@ -216,8 +217,7 @@ section{
 .topic{
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
-    color:black;
-    text-decoration: bold;
+    color:black;    
 }
 
 .content{

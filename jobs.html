@@ -9,8 +9,7 @@
     <link href = "jobsdesign.css" rel="stylesheet"> <!--used for linking the style page-->
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"><!--used for bringing the font from the google font page-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
@@ -48,13 +47,14 @@
                 <div class="title">Job description:</div><hr>
                 <div class="texts">
                         <ul>
-                            <li>Interpret massive quantitative data, analyze results using statistical techniques and provide ongoing reports </li><br>
+                            <li>Interpret massive quantitative data, analyze results using statistical techniques and provide ongoing reports </li>
+                            
                             <li>Identify trends or patterns in complex data sets 
-                                </li><br>
+                                </li>
                             <li>Conduct full analytical life cycle activities which include data gathering, data extraction, analysis, and presentation of results 
-                                </li><br>
+                                </li>
                             <li>Identify and reslive issues systematically and clilect feedback for further modification 
-                                </li><br>
+                                </li>
                             <li>Filter and clean data, and review reports, and performance indicators to locate and correct problem 
                                 </li>
                         </ul>
@@ -64,9 +64,9 @@
                 <div class="title">What we offer:</div><hr>
                 <div class="texts">
                        <ul>
-                           <li>International working environment in a start-up setting, and a unique opportunity to learn from the best in e-commerce and online marketing </li><br>
-                           <li>Rigorous training and exposure in team management, leadership, online marketing, business analytics and operations </li><br>
-                           <li>Five days working week (Monday to Friday) </li><br>
+                           <li>International working environment in a start-up setting, and a unique opportunity to learn from the best in e-commerce and online marketing </li>
+                           <li>Rigorous training and exposure in team management, leadership, online marketing, business analytics and operations </li>
+                           <li>Five days working week (Monday to Friday) </li>
                            <li>Benefit package: Provident Fund, Gratuity, Fuel Expenses, Employee Discount, Mobile top ups and data pack, Accidental Insurance, Medical Insurance, Full annual health check-up 
                             </li>
                        </ul>
@@ -75,29 +75,29 @@
     
 
 
-        <form action="" method="POST" >
+        <form method="POST" >
             <fieldset>
                 <legend>Apply For Job</legend>
-            <label for="fname"> First Name : </label>
-            <input type="text" name="firstname" placeholder="Firstname">
-            <label for="fname"> Last Name :</label>    
-            <input type="text" name="lastname" placeholder="Lastname">
-            <label for="fname"> Address :</label>
-            <input type="text" name="adress" placeholder="Adress"><br><br>
-            <label for="fname">Currently Employed :</label>
-            <input type="radio" name="Yes" value="Yes">Yes
+            <label for="firstname"> First Name : </label>
+            <input id="firstname" type="text" name="firstname" placeholder="Firstname">
+            <label for="lastname"> Last Name :</label>    
+            <input id="lastname" type="text" name="lastname" placeholder="Lastname">
+            <label for="Adress"> Address :</label>
+            <input id="Adress" type="text" name="adress" placeholder="Adress"><br><br>
+            <label for="YesNO">Currently Employed :</label>
+            <input id="YesNO" type="radio" name="Yes" value="Yes">Yes
             <input type="radio" name="No" value="No" checked>No<br><br>
-            <label for="fname">E-mail :</label>
-            <input type="email" name="email" placeholder="Email">
-            <label for="fname">Qualification :</label>
-            <select name="education">
+            <label for="email">E-mail :</label>
+            <input id="email" type="email" name="email" placeholder="Email">
+            <label for="Qualification">Qualification :</label>
+            <select id="Qualification" name="education">
                 <option value="Bachleor">Bachleor</option>
                 <option value="Master">Master</option>
                 <option value="Ph.D">Ph.D</option>              
 
             </select><br><br>
-            <label for="fname">Submit you CV here :</label>
-            <input type="file" name="cv"><br><br>
+            <label for="CVfiles">Submit you CV here :</label>
+            <input id="CVfiles" type="file" name="cv"><br><br>
             <input type="submit">
 
 

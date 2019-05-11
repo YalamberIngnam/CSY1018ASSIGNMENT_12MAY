@@ -23,8 +23,7 @@ nav{
     padding:15px;
     position:sticky;
     top:0;
-    z-index:1;
-    opacity:0.8;
+    z-index:1;    
 }
 
 nav ul{
@@ -47,7 +46,7 @@ nav ul li a{
 nav ul li a:hover{
 
     color:#010364;     
-    letter-spacing: 5px;  
+    letter-spacing: 2px;  
 } 
 
 section{

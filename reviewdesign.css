@@ -20,8 +20,7 @@ header > a{
 nav{
     background-color:#e65100;
     font-family: 'Anton', sans-serif;
-    padding:15px;
-    opacity:0.8;
+    padding:15px;    
     position:sticky;
     top:0;
     z-index: 1;
@@ -42,12 +41,14 @@ nav ul li a{
     text-decoration: none;
     color:whitesmoke;
     font-size: 20px;
+    
 }
 
 nav ul li a:hover{
 
     color:#010364;     
-    letter-spacing: 5px;    
+    letter-spacing: 2px;  
+   
 }
 
 section{
@@ -79,8 +80,7 @@ margin-right:1%;
 
 .right>.content{
     color:black;
-    padding:10px;
-    font-family: 'Raleway', sans-serif;
+    padding:10px;    
     font-size:14px;
 }
 
@@ -113,8 +113,7 @@ margin-right:1%;
 
 .left>.content{
 	color:black;
-    padding:10px;
-    font-family: 'Raleway', sans-serif;
+    padding:10px;    
     font-size: 14px;
 
 }
@@ -240,6 +239,7 @@ footer{
     header{text-align:center;} 
      nav ul{display: flex; flex-direction: column; width:100%; height:auto; text-align:center; margin:0px; padding:0px;}
      nav{position: initial;}
+     /* nav ul li a{padding-right:150px;} */
     section{flex-direction: column; height: auto; width: 100%;}
     .right,.left{width:100%; height:auto;}
     .imagecontainer, .imagecontainer1{transform:translate(81px, 10px);}
@@ -258,3 +258,4 @@ footer{
     .left> .title,.right> .title{font-size:35px;}
     .imagecontainer, .imagecontainer1{transform:translate(492px, 10px); width:300px; height:300px;}
  }
+

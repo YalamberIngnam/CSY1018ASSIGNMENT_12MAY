@@ -8,13 +8,8 @@ header{
     font-family: 'Anton', sans-serif;
     font-size:40px;    
     padding: 0px;    
-    background-color:white;
-    text-align:right;
     text-align:left;
 }
-
-
-
 
 header > a{
     text-decoration: none;    
@@ -24,8 +19,7 @@ header > a{
 nav{
     background-color:#e65100;
     font-family: 'Anton', sans-serif;
-    padding:15px;
-    opacity:0.8;
+    padding:15px;    
     position:sticky;
     top:0;
     z-index:1;
@@ -52,7 +46,7 @@ nav ul li a{
 nav ul li a:hover{
 
     color:#010364;     
-    letter-spacing: 5px;    
+    letter-spacing: 2px;    
 } 
 
 .pagetitle{
@@ -110,7 +104,7 @@ section{
     grid-column-gap: 10px;
     grid-template-columns: 190px 190px ;
     grid-template-rows:60px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;    
-    background-color:rgba(0,0,0,0.8);
+    background-color:#3f5b91;
     padding:10px;
     width: 30%;
 }
@@ -142,12 +136,12 @@ section{
 
 .two-grid>.category1{
     font-family: 'Anton', sans-serif;
-    background-color: maroon;
+    background-color: #000a38;
 }
 
 .two-grid>.category2{
     font-family: 'Anton', sans-serif;
-    background-color: maroon;
+    background-color: #000a38;
 }
 
 
@@ -362,4 +356,4 @@ footer{
 @media screen and (min-width:2465px){
     .two-grid{grid-column-gap: 8px; grid-template-columns: 250px 250px ;}
     .initial{width:126%;}
-    
+}
